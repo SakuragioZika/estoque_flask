@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Início{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <h1 class="text-center mb-4">Bem-vindo ao Sistema de Gerenciamento de Estoque</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Controle de Produtos</h5>
+                <p class="card-text">
+                    Este sistema permite gerenciar o estoque de produtos, incluindo adição, edição e remoção de itens.
+                </p>
+                <a href="{{ url_for('products') }}" class="btn btn-primary">Ver Produtos</a>
+                <a href="{{ url_for('add_product') }}" class="btn btn-success">Adicionar Produto</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
